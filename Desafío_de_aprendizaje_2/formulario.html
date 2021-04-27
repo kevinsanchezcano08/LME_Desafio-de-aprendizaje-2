@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario/css/bootstrap.css">
+    <link rel="stylesheet" href="formulario/css/style.css">
+    <script src="https://kit.fontawesome.com/28279bfb40.js" crossorigin="anonymous"></script>
+    <script src="formulario/js/bootstrap.min.js"></script>
+    <script src="formulario/js/Jquery.min.js"></script>
+    <script src="formulario/js/registroEst.js"></script>
+    <title>Formulario</title>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="index.html">Carrusel de imágenes</a></li>
+          <li>|</li>
+          <li><a href="formulario.html">Formulario</a></li>
+        </ul>
+    </nav>
+    <h1 id="H1">Formulario de </h1>
+    <h1 id="H1">registro <span>de estudiante</span></h1>
+    <p id="P1">Por favor completa todos los campos solicitados.</p>
+    <img class="card-img" src="formulario/form.svg" alt="Formulario">
+    <a id="cont" href="#this">Continuar <i class="fas fa-arrow-circle-down"></i></a>
+    <form class="form">
+        <div class="form-group">
+            <label id="this">Nombre completo:</label>
+            <input type="text" id="name" class="form-control"   required >
+        </div>
+        <div class="form-group">
+            <label>Fecha de nacimiento:</label>
+            <input type="date" id="dateBirth" class="form-control" required  >
+        </div>
+        <div class="form-group">
+            <label>DUI:</label>
+            <input type="text" id="DUI" pattern="^[0-9]{8}-[0-9]{1}" class="form-control"  required >
+        </div>
+        <div class="form-group">
+            <label>Genero:</label>
+            <select id="gender" class="form-control">
+                <option>Maculino</option>
+                <option>Femenino</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Correo electrónico:</label>
+            <input type="email" id="email" class="form-control"  required  >
+        </div>
+        <div class="form-group">
+            <label>Carnet de estudiante:</label>
+            <input type="text" id="carnet" pattern="^[A-Z]{2}[0-9]{6}" class="form-control" required  >
+        </div>
+        <div class="form-group">
+            <label>Celular:</label>
+            <input type="text" id="cel" pattern="[0-9]{4}-[0-9]{4}" class="form-control"  required >
+        </div>
+        <div class="form-group">
+            <label>Dirección:</label>
+            <input type="text" id="address" class="form-control"  required >
+        </div>
+        <input type="submit" value="Registro de estudiante" class="btn btn-info">
+    </form>
+</body>
+</html>
